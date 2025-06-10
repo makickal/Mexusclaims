@@ -31,6 +31,12 @@
             cursor: pointer;
             user-select: none;
         }
+        .chevron-icon {
+            transition: transform 0.3s;
+        }
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body class="text-gray-300">
@@ -62,15 +68,15 @@
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
                             <div>
                                 <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
-                                <p class="text-sm text-gray-300">Mexico's Constitution (Art. 2) mandates bilingual and intercultural education to preserve its 68 indigenous national languages. [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Mexico's Constitution (Art. 2) mandates bilingual and intercultural education to preserve its 68 indigenous national languages. [<a href="https://www.diputados.gob.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">The Supreme Court case <i class="italic">Lau v. Nichols (1974)</i> requires schools to assist non-English speaking students, leading to various bilingual and ESL programs. [<a href="https://www.justice.gov/crt/lau-v-nichols" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">The Supreme Court case <i class="italic">Lau v. Nichols (1974)</i> requires schools to assist non-English speaking students, leading to various bilingual and ESL programs. [<a href="https://www.justice.gov/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                              <div>
                                 <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
-                                <p class="text-sm text-gray-300">While federally supported, some states have passed "Official English" or "English-only" laws, such as in Arizona and Florida, which can influence public education policies. [<a href="https://www.ncsl.org/research/immigration/official-english-or-english-plus.aspx" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">While federally supported, some states have passed "Official English" or "English-only" laws, such as in Arizona and Florida, which can influence public education policies. [<a href="https://www.ncsl.org/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -96,7 +102,7 @@
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">This is false in the U.S. The federal Voting Rights Act requires certain jurisdictions to provide bilingual ballots and language assistance. [<a href="https://www.justice.gov/crt/language-minority-citizens" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">This is false in the U.S. The federal Voting Rights Act requires certain jurisdictions to provide bilingual ballots and language assistance. [<a href="https://www.justice.gov/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -118,15 +124,15 @@
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
                              <div>
                                 <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
-                                <p class="text-sm text-gray-300">Constitution (Arts. 34, 35) reserves voting and public office for Mexican citizens, with stricter birth requirements for high office. [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Constitution (Arts. 34, 35) reserves voting and public office for Mexican citizens, with stricter birth requirements for high office. [<a href="https://www.diputados.gob.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">True. Federal law and the Constitution reserve voting in federal elections and holding federal office to U.S. citizens. [<a href="https://www.usa.gov/who-can-vote" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">True. Federal law and the Constitution reserve voting in federal elections and holding federal office to U.S. citizens. [<a href="https://www.usa.gov/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
-                                <p class="text-sm text-gray-300">A small number of municipalities in states like Maryland and Vermont allow non-citizens to vote in local elections, but this is not widespread. [<a href="https://ballotpedia.org/Laws_permitting_noncitizen_voting_in_the_United_States" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">A small number of municipalities in states like Maryland and Vermont allow non-citizens to vote in local elections, but this is not widespread. [<a href="https://ballotpedia.org/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -148,11 +154,11 @@
                         <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
                              <div>
                                 <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
-                                <p class="text-sm text-gray-300">This is a major distortion. Mexico provides constitutional rights to healthcare/education for all. Legal residents can access public social services. [<a href="https://www.gob.mx/imss" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">This is a major distortion. Mexico provides constitutional rights to healthcare/education for all. Legal residents can access public social services. [<a href="https://www.gob.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">Complex. Undocumented immigrants are ineligible for most federal benefits. Legal immigrants often face a 5-year wait. Emergency services are an exception. [<a href="https://www.nilc.org/issues/economic-support/overview-immeligfedprograms/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Complex. Undocumented immigrants are ineligible for most federal benefits. Legal immigrants often face a 5-year wait. Emergency services are an exception. [<a href="https://www.nilc.org/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -174,15 +180,15 @@
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
                              <div>
                                 <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
-                                <p class="text-sm text-gray-300">True. Art. 27 of the Constitution creates a "Restricted Zone" (near coasts/borders) where foreigners use a bank trust (<i class="italic">fideicomiso</i>). [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">True. Art. 27 of the Constitution creates a "Restricted Zone" (near coasts/borders) where foreigners use a bank trust (<i class="italic">fideicomiso</i>). [<a href="https://www.diputados.gob.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">Generally no federal restrictions on residential property, but reporting requirements exist for foreign investments. [<a href="https://crsreports.congress.gov/product/pdf/R/R47585" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Generally no federal restrictions on residential property, but reporting requirements exist for foreign investments. [<a href="https://crsreports.congress.gov/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                              <div>
                                 <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
-                                <p class="text-sm text-gray-300">An increasing number of states, including Florida and Texas, have laws restricting or banning certain foreign nationals or entities from buying agricultural land or land near military bases. [<a href="https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2023/10/05/states-are-cracking-down-on-foreign-ownership-of-us-farmland" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">An increasing number of states, including Florida and Texas, have laws restricting or banning certain foreign nationals or entities from buying agricultural land or land near military bases. [<a href="https://www.pewtrusts.org/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -204,11 +210,11 @@
                         <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
                              <div>
                                 <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
-                                <p class="text-sm text-gray-300">True. Constitution Art. 33 forbids foreigners from interfering in political affairs and grants power to expel those deemed "inconvenient". [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">True. Constitution Art. 33 forbids foreigners from interfering in political affairs and grants power to expel those deemed "inconvenient". [<a href="https://www.diputados.gob.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">False. The First Amendment's rights to speech and assembly apply to all persons in the U.S., regardless of citizenship. [<a href="https://constitution.congress.gov/browse/amendment-1/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">False. The First Amendment's rights to speech and assembly apply to all persons in the U.S., regardless of citizenship. [<a href="https://constitution.congress.gov/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -230,15 +236,15 @@
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
                              <div>
                                 <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
-                                <p class="text-sm text-gray-300">Unauthorized presence is an administrative, not criminal, offense. Asset seizure is not a standard penalty for this violation. [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Unauthorized presence is an administrative, not criminal, offense. Asset seizure is not a standard penalty for this violation. [<a href="https://www.diputados.gob.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
-                                <p class="text-sm text-gray-300">Unlawful presence is a civil violation. ICE/CBP enforce laws via detention and removal. Asset forfeiture is a separate legal process, not standard. [<a href="https://www.ice.gov/features/civil-enforcement" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Unlawful presence is a civil violation. ICE/CBP enforce laws via detention and removal. Asset forfeiture is a separate legal process, not standard. [<a href="https://www.ice.gov/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                             <div>
                                 <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
-                                <p class="text-sm text-gray-300">Some states have passed laws to increase local law enforcement's role in immigration enforcement (e.g., Texas's SB4), while others have "sanctuary" policies limiting cooperation with federal immigration authorities. [<a href="https://www.aclu.org/know-your-rights/what-are-sanctuary-policies" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                                <p class="text-sm text-gray-300">Some states have passed laws to increase local law enforcement's role in immigration enforcement (e.g., Texas's SB4), while others have "sanctuary" policies limiting cooperation with federal immigration authorities. [<a href="https://www.aclu.org/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
                             </div>
                         </div>
                     </div>
@@ -275,5 +281,3 @@
 
 </body>
 </html>
-
-

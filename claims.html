@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comparative Look at Mexican & U.S. Law</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Dark Slate Blue */
+            background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+        }
+        /* Styles for the expandable details section */
+        .details-container {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.4s ease-out;
+        }
+        .details-container.open {
+            grid-template-rows: 1fr;
+        }
+        .details-content {
+            overflow: hidden;
+        }
+        /* Make the clickable area more intuitive */
+        .card-header {
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3">A Comparative Look at Mexican & U.S. Law</h1>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">An analysis of claims from an email forwarded by Judy D., comparing Mexican law with U.S. federal and state law.</p>
+        </header>
+
+        <!-- The main content area for claims -->
+        <div class="space-y-4">
+
+            <!-- Claim Card: Bilingual Education -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <!-- Clickable Header Row -->
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">1. No special bilingual programs in schools.</h3>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-red-400 hidden sm:inline">False</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-red-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                <!-- Hidden Details Container -->
+                <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                            <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">Mexico's Constitution (Art. 2) mandates bilingual and intercultural education to preserve its 68 indigenous national languages. [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">The Supreme Court case <i class="italic">Lau v. Nichols (1974)</i> requires schools to assist non-English speaking students, leading to various bilingual and ESL programs. [<a href="https://www.justice.gov/crt/lau-v-nichols" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                             <div>
+                                <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
+                                <p class="text-sm text-gray-300">While federally supported, some states have passed "Official English" or "English-only" laws, such as in Arizona and Florida, which can influence public education policies. [<a href="https://www.ncsl.org/research/immigration/official-english-or-english-plus.aspx" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claim Card: Ballots -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">2. All ballots will be in this nation’s language.</h3>
+                     <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-yellow-400 hidden sm:inline">Mostly True</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-yellow-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                             <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">Ballots are primarily in Spanish, but law allows for translators and materials in indigenous languages in relevant communities. [<a href="https://www.ine.mx/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">This is false in the U.S. The federal Voting Rights Act requires certain jurisdictions to provide bilingual ballots and language assistance. [<a href="https://www.justice.gov/crt/language-minority-citizens" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Claim Card: Voting/Office -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">3. Non-citizens cannot vote or hold office.</h3>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-green-400 hidden sm:inline">True</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-green-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                             <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">Constitution (Arts. 34, 35) reserves voting and public office for Mexican citizens, with stricter birth requirements for high office. [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">True. Federal law and the Constitution reserve voting in federal elections and holding federal office to U.S. citizens. [<a href="https://www.usa.gov/who-can-vote" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
+                                <p class="text-sm text-gray-300">A small number of municipalities in states like Maryland and Vermont allow non-citizens to vote in local elections, but this is not widespread. [<a href="https://ballotpedia.org/Laws_permitting_noncitizen_voting_in_the_United_States" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claim Card: Welfare -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">4. Foreigners get no welfare, food stamps, or healthcare.</h3>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-red-400 hidden sm:inline">False</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-red-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                             <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">This is a major distortion. Mexico provides constitutional rights to healthcare/education for all. Legal residents can access public social services. [<a href="https://www.gob.mx/imss" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">Complex. Undocumented immigrants are ineligible for most federal benefits. Legal immigrants often face a 5-year wait. Emergency services are an exception. [<a href="https://www.nilc.org/issues/economic-support/overview-immeligfedprograms/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claim Card: Land Ownership -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">5. Foreigners face restrictions on buying land.</h3>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-green-400 hidden sm:inline">True</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-green-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                             <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">True. Art. 27 of the Constitution creates a "Restricted Zone" (near coasts/borders) where foreigners use a bank trust (<i class="italic">fideicomiso</i>). [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">Generally no federal restrictions on residential property, but reporting requirements exist for foreign investments. [<a href="https://crsreports.congress.gov/product/pdf/R/R47585" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                             <div>
+                                <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
+                                <p class="text-sm text-gray-300">An increasing number of states, including Florida and Texas, have laws restricting or banning certain foreign nationals or entities from buying agricultural land or land near military bases. [<a href="https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2023/10/05/states-are-cracking-down-on-foreign-ownership-of-us-farmland" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claim Card: Protests -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">6. Foreigners may not protest or criticize the government.</h3>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-green-400 hidden sm:inline">True</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-green-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                             <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">True. Constitution Art. 33 forbids foreigners from interfering in political affairs and grants power to expel those deemed "inconvenient". [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">False. The First Amendment's rights to speech and assembly apply to all persons in the U.S., regardless of citizenship. [<a href="https://constitution.congress.gov/browse/amendment-1/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claim Card: Enforcement -->
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-5 sm:p-6 shadow-lg">
+                <div class="card-header flex justify-between items-center gap-4" onclick="toggleDetails(this)" title="Click to see details">
+                    <h3 class="font-bold text-lg text-white flex-1">7. Illegal immigrants are hunted, jailed, and assets seized.</h3>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="font-semibold text-yellow-400 hidden sm:inline">Exaggerated</span>
+                        <div class="flex items-center justify-center w-10 h-10 bg-yellow-500/20 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                </div>
+                 <div class="details-container">
+                    <div class="details-content">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 pt-4 mt-4 border-t border-slate-700">
+                             <div>
+                                <span class="inline-block bg-sky-500/10 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Mexico Details</span>
+                                <p class="text-sm text-gray-300">Unauthorized presence is an administrative, not criminal, offense. Asset seizure is not a standard penalty for this violation. [<a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-green-500/10 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. Details</span>
+                                <p class="text-sm text-gray-300">Unlawful presence is a civil violation. ICE/CBP enforce laws via detention and removal. Asset forfeiture is a separate legal process, not standard. [<a href="https://www.ice.gov/features/civil-enforcement" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-indigo-500/10 text-indigo-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">U.S. State Considerations</span>
+                                <p class="text-sm text-gray-300">Some states have passed laws to increase local law enforcement's role in immigration enforcement (e.g., Texas's SB4), while others have "sanctuary" policies limiting cooperation with federal immigration authorities. [<a href="https://www.aclu.org/know-your-rights/what-are-sanctuary-policies" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Source</a>]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="text-center mt-12 pt-6 border-t border-slate-700">
+            <p class="text-gray-400">Coded with ❤️ by Makickal</p>
+            <p class="text-xs text-gray-500 mt-2">This page is for informational purposes only and does not constitute legal advice. Laws are complex and subject to change.
+            <br>Information verified against sources as of June 2025.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Function to toggle the visibility of the details section
+        function toggleDetails(element) {
+            // Find the parent card element
+            const card = element.closest('.bg-slate-800\\/50');
+            if (card) {
+                // Find the details container and the chevron icon within that card
+                const detailsContainer = card.querySelector('.details-container');
+                const chevron = card.querySelector('.chevron-icon');
+                
+                if (detailsContainer && chevron) {
+                    detailsContainer.classList.toggle('open');
+                    chevron.classList.toggle('rotate-180');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
